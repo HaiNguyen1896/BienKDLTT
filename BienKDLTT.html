@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Bài 1: Tính điểm trung bình và tổng điểm
+  let vl = prompt("Nhap diem vat ly");
+  let hoahoc = prompt("Nhap diem hoa hoc");
+  let sinhhoc = prompt("Nhap diem sinh hoc");
+  let diemvl = parseInt(vl); // chuyển kiểu DL điểm
+  let diemhoahoc = parseInt(hoahoc); // chuyển kiểu DL điểm
+  let diemsinhhoc = parseInt(sinhhoc); // chuyển kiểu DL điểm
+  let tb=(diemvl + diemhoahoc + diemsinhhoc)/3;
+  let tong = diemvl + diemhoahoc + diemsinhhoc;
+  document.write("Diem TB = "+tb);
+  document.write('</br>');
+  document.write("Tong diem = "+tong);
+  document.write('</br>');
+
+  // Bài 2:Tính độ F từ độ C
+  let c = prompt ("Nhap gia tri do C");
+  let f;
+  let degc=parseInt(c);
+  f = (degc/5*9)+32;
+  document.write("do F =" +f)
+  document.write('</br>')
+
+  // Bài 3: tính S hình tròn
+  let d = prompt ("Nhap duong kinh D:");
+  let dk = parseInt(d);
+  let s = Math.PI*Math.pow(dk,2)/4;
+  s=Math.round(s*100)/100;
+  document.write("S hinh tron= " +s+ " m2");
+  document.write('</br>')
+
+  // Bài 4: Tính chu vi hình tròn
+  let cv = Math.PI * dk;
+  cv=Math.round(cv*100)/100;
+  document.write("Chu vi hinh tron= " +cv+ " m")
+</script>
+</body>
+</html>
